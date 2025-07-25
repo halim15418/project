@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Kelas & Jadwal Piket</title>
+    <link rel="stylesheet" href="struktur.css">
+</head>
+<body>
+    <header>
+        <h1>Struktur Kelas XII MIPA 4</h1>
+        <p>Tahun Ajaran 2025/2026</p>
+    </header>
+
+    <main>
+        <section id="struktur-kelas">
+            <h2>Struktur Organisasi Kelas</h2>
+            <div class="struktur-grid">
+                <div class="jabatan">
+                    <h3>Ketua Kelas</h3>
+                    <p id="ketua-kelas">Nama Ketua</p>
+                </div>
+                <div class="jabatan">
+                    <h3>Wakil Ketua</h3>
+                    <p id="wakil-ketua">Nama Wakil</p>
+                </div>
+                <div class="jabatan">
+                    <h3>Sekretaris I</h3>
+                    <p id="sekretaris-1">Nama Sekretaris I</p>
+                </div>
+                <div class="jabatan">
+                    <h3>Sekretaris II</h3>
+                    <p id="sekretaris-2">Nama Sekretaris II</p>
+                </div>
+                <div class="jabatan">
+                    <h3>Bendahara I</h3>
+                    <p id="bendahara-1">Nama Bendahara I</p>
+                </div>
+                <div class="jabatan">
+                    <h3>Bendahara II</h3>
+                    <p id="bendahara-2">Nama Bendahara II</p>
+                </div>
+            </div>
+            <button id="editStrukturBtn">Edit Struktur</button>
+        </section>
+
+        <section id="jadwal-piket">
+            <h2>Jadwal Piket Kelas</h2>
+            <div class="filter-hari">
+                <label for="hariFilter">Tampilkan Hari:</label>
+                <select id="hariFilter">
+                    <option value="semua">Semua Hari</option>
+                    <option value="Senin">Senin</option>
+                    <option value="Selasa">Selasa</option>
+                    <option value="Rabu">Rabu</option>
+                    <option value="Kamis">Kamis</option>
+                    <option value="Jumat">Jumat</option>
+                </select>
+            </div>
+            <table id="tabelPiket">
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Anggota Piket</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+            <button id="editPiketBtn">Edit Jadwal Piket</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kelas XII MIPA 4. Dibuat dengan ❤</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
